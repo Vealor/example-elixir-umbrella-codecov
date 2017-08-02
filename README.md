@@ -1,7 +1,7 @@
 [Codecov][1] Elixir (Umbrella Project) Example
 =======================
 
-[![Build Status](https://travis-ci.org/vealor/example-elixir-umbrella-codecov.svg?branch=master)](https://travis-ci.org/vealor/example-elixir-umbrella-codecov) [![codecov](https://codecov.io/gh/vealor/example-elixir-umbrella-codecov/branch/master/graph/badge.svg?token=)](https://codecov.io/gh/vealor/example-elixir-umbrella-codecov)
+[![Build Status](https://travis-ci.org/Vealor/example-elixir-umbrella-codecov.svg?branch=master)](https://travis-ci.org/Vealor/example-elixir-umbrella-codecov) [![codecov](https://codecov.io/gh/Vealor/example-elixir-umbrella-codecov/branch/master/graph/badge.svg?token=)](https://codecov.io/gh/Vealor/example-elixir-umbrella-codecov)
 
 This repository serves as an **example** on how to use [Codecov Global][4] for an Elixir Umbrella Project.
 
@@ -91,6 +91,6 @@ mix coveralls --umbrella
 Need help? Contact support https://github.com/codecov/support
 
 [1]: https://codecov.io/
-[2]: https://travis-ci.org/vealor/example-elixir-umbrella-codecov
-[3]: https://codecov.io/gh/vealor/example-elixir-umbrella-codecov
+[2]: https://travis-ci.org/Vealor/example-elixir-umbrella-codecov
+[3]: https://codecov.io/gh/Vealor/example-elixir-umbrella-codecov
 [4]: https://github.com/codecov/codecov-bash
