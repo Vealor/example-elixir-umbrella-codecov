@@ -15,4 +15,8 @@ defmodule Example.One do
   def hello do
     :world
   end
+
+  def do_something_one(test) do
+    test
+  end
 end

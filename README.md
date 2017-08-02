@@ -74,7 +74,7 @@ test_coverage: [tool: ExCoveralls]
 ```
 Currently if you are using a framework or something that does not include a full test suite by default, you are losing code coverage points by adding that subapp to coverage testing!
 
-In the example subapps, only **example_one** and **example_two** are included in the coverage.  This can be seen on both [codecov.io][3] and on [travis-ci][2] at the end of the build when it shows the results.
+In the example subapps, only **example_one** and **example_two** are included in the coverage.  This can be seen on both [codecov.io][3] and on [travis-ci][2] at the end of the build when it shows the results.  Coverage should only be 50% as I commented the test out for example_two.
 
 # Testing coverage locally:
 ###### Run these commands at the umbrella project roo

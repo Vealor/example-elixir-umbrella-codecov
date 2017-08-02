@@ -1,4 +1,4 @@
-defmodule Codecov.Mixfile do
+defmodule Exampleproject.Mixfile do
   use Mix.Project
 
 @version "1.0"
