@@ -43,11 +43,9 @@ language: elixir
 elixir:
   - 1.3
   - 1.4
-  - 1.5
 otp_release:
-  - 18
-  - 19
-  - 20
+  - 18.3
+  - 19.3
 
 script:
   - "MIX_ENV=test mix do compile, coveralls.json --umbrella"
