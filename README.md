@@ -5,10 +5,12 @@
 
 This repository serves as an **example** on how to use [Codecov Global][4] for an Elixir Umbrella Project.
 
+###### Coverage for this example project will be less than ideal as I commented the tests out for example_two, and phoenix by default only has 25% coverage.
+
 # Mix.exs
 The main configuration required for the projects to work.
 #### Add Depenency:
-Add [excoveralls](https://hex.pm/packages/excoveralls) to your mix.exs deps.
+Add [excoveralls](https://hex.pm/packages/excoveralls) to your top level umbrella mix.exs deps.
 ```elixir
 defp deps do
   [
@@ -37,7 +39,7 @@ end
 # Travis CI
 
 Add to your `.travis.yml` file.  
-NOTE: Use any elixir or otp_release versions you need, these are examples.
+NOTE: Use any *elixir* or *otp_release* versions you need, these are examples.
 ```yml
 language: elixir
 elixir:
@@ -78,12 +80,12 @@ For each subapp:
 ```elixir
 test_coverage: [tool: ExCoveralls]
 ```
-Currently if you are using a framework or something that does not include a full test suite by default, you are losing code coverage points by adding that subapp to coverage testing!
+In the example subapps, only **example_one** and **example_two** are included in the coverage.  This can be seen on both [codecov.io][3] and on [travis-ci][2] at the end of the build when it shows the results.  Also, as stated above, coverage for this example project will be less than ideal as I commented the tests out for example_two, and phoenix by default only has 25% coverage.
 
-In the example subapps, only **example_one** and **example_two** are included in the coverage.  This can be seen on both [codecov.io][3] and on [travis-ci][2] at the end of the build when it shows the results.  Coverage should only be 50% as I commented the test out for example_two.
+Frameworks such as [Phoenix][5] need only have this added to their mix.exs too (as seen in the example_web sub-app).  As the back-end is Elixir, it takes advantage of the Elixir test suite and only uses that in the coverage reports.
 
 # Testing coverage locally:
-###### Run these commands at the umbrella project roo
+###### Run these commands at the umbrella project root: (after running *mix deps.get*)
 To test the coverage of each individual app:
 ```bash
 mix coveralls
@@ -100,3 +102,4 @@ Need help? Contact support https://github.com/codecov/support
 [2]: https://travis-ci.org/Vealor/example-elixir-umbrella-codecov
 [3]: https://codecov.io/gh/Vealor/example-elixir-umbrella-codecov
 [4]: https://github.com/codecov/codecov-bash
+[5]: https://github.com/phoenixframework/phoenix
